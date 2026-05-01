@@ -1,7 +1,7 @@
 # The Wine Poet — Li Bai Poetry Website
 
 
-A bilingual (English/Romanian/Chinese) website dedicated to the poems of Li Bai (701–762 AD), the legendary "Immortal Poet" of the Tang Dynasty.
+A bilingual (English/Romanian/Chinese) website dedicated to the poems of Li Bai (701–762 AD), the legendary "Immortal Poet" of the Tang Dynasty. It works on both desktop and mobile.
 
 ## Features
 
@@ -42,6 +42,8 @@ Below are my original wireframes and design sketches for this project:
 [View the live website here](https://dianamaria-dev.github.io/li-bai-poems/)
 
 <img width="1897" height="862" alt="Captură de ecran 2026-05-01 151507" src="https://github.com/user-attachments/assets/f7e72571-a4b3-4b60-a51f-1496e76f06f5" />
+<img width="1220" height="2415" alt="website-mobile" src="https://github.com/user-attachments/assets/544751ec-3d13-46a2-a3aa-2ddc18a3a019" />
+
 
 
 ## Credits
