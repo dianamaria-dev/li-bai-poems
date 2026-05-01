@@ -1,0 +1,1064 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Georgia', serif;
+}
+
+/* Desktop background */
+body {
+    background-image: url('assets/images/backgrounds/bg-light-desktop.png');
+}
+
+/* Mobile background */
+@media (max-width: 768px) {
+    body {
+        background-image: url('assets/images/backgrounds/bg-light-mobile.png');
+    }
+}
+
+/* RED MENU BAR */
+.top-bar {
+    background-color: #C62828;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* On mobile, make title centered */
+@media (max-width: 768px) {
+    .top-bar {
+        justify-content: space-between;
+    }
+    
+    .site-title {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+    }
+    
+    .lang-buttons {
+        margin-left: auto;
+    }
+}
+
+/* Hamburger menu button */
+.menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.menu-btn:hover {
+    color: #ffcccc;
+    transform: scale(1.05);
+}
+
+/* Website title in menu bar */
+.site-title {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Language buttons */
+.lang-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.lang-btn {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.lang-btn:hover {
+    background-color: white;
+    color: #C62828;
+}
+
+/* Main content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Poem card */
+/* Poem card - when no image */
+.poem-card {
+    background: rgba(255, 248, 225, 0.92);
+    border-radius: 32px;
+    padding: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.poem-text {
+    width: 100%;
+}
+
+.poem-text h1 {
+    color: #8B0000;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.poem-image {
+    flex: 1;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.poem-image img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.poem-card h1 {
+    color: #8B0000;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+#poem-title {
+    color: #2c1810;
+    margin-bottom: 1rem;
+}
+
+#poem-chinese {
+    font-size: 1.3rem;
+    line-height: 2;
+    color: #2c1810;
+    margin-bottom: 1rem;
+}
+
+#poem-english {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #3a2a1a;
+    font-style: italic;
+}
+
+.star-btn {
+    background: #C62828;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.star-btn:hover {
+    background: #8B0000;
+    transform: scale(1.02);
+}
+
+.next-btn {
+    background: #C62828;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    display: block;
+    width: fit-content;
+}
+
+.next-btn:hover {
+    background: #8B0000;
+}
+
+/* ========== NEW STYLISH FOOTER ========== */
+/* ========== NEW STYLISH FOOTER ========== */
+footer {
+    margin-top: 4rem;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%);
+    border-radius: 0;
+    padding: 3rem 2rem 1.5rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Footer divider line */
+.footer-divider {
+    width: 60px;
+    height: 2px;
+    background: #C62828;
+    margin: 0 auto 1.5rem;
+}
+
+/* Footer navigation links */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #C62828;
+}
+
+/* Contact email area */
+.contact-area {
+    margin: 1.5rem 0;
+}
+
+.contact-email {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(198, 40, 40, 0.3);
+    border: 1px solid rgba(198, 40, 40, 0.7);
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    background: rgba(198, 40, 40, 0.6);
+    border-color: #C62828;
+    color: white;
+    transform: scale(1.02);
+}
+
+/* Copyright and legal text */
+.footer-legal {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* Designer credit */
+.designer-credit {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+/* ========== SLIDING MENU ========== */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 200;
+}
+
+.menu-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #8B0000;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 201;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.close-menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    text-align: right;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+}
+
+.close-menu:hover {
+    color: #ffcccc;
+    transform: scale(1.1);
+}
+
+.menu-item {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 0.8rem 1rem;
+    margin: 0.2rem 0;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+    display: block;
+    font-family: 'Georgia', serif;
+}
+
+.menu-item:hover {
+    background-color: #C62828;
+    padding-left: 1.5rem;
+}
+
+.menu-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-panel.open {
+    transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+    .menu-panel {
+        width: 100%;
+    }
+    .poem-card {
+        flex-direction: column;
+    }
+    .poem-image {
+        order: -1;
+    }
+}
+
+/* ========== MOBILE FIXES ========== */
+@media (max-width: 768px) {
+    /* Center the title on mobile */
+    .site-title {
+        font-size: 1.1rem;
+        text-align: center;
+        flex: 1;
+    }
+    
+    /* Keep language buttons on right */
+    .lang-buttons {
+        margin-left: auto;
+    }
+    
+    /* Fix poem card layout on mobile */
+    .poem-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    /* Center the image on mobile */
+    .poem-image {
+        justify-content: center !important;
+        order: -1;  /* Image goes above text */
+        margin-bottom: 1rem;
+    }
+    
+    .poem-image img {
+        max-width: 180px;
+        margin: 0 auto;
+    }
+    
+    /* Center poem text on mobile */
+    .poem-text {
+        text-align: center;
+    }
+    
+    /* Center the next button */
+    .next-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* Adjust container padding */
+    .container {
+        padding: 1rem;
+    }
+    
+    /* Poem card padding */
+    .poem-card {
+        padding: 1.5rem;
+    }
+}
+
+/* ========== LANGUAGE SWITCHER - DESKTOP & MOBILE HYBRID ========== */
+
+/* Desktop: show normal buttons, hide dropdown */
+.lang-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.lang-dropdown {
+    display: none;
+}
+
+/* Mobile: hide buttons, show dropdown */
+@media (max-width: 768px) {
+    .lang-buttons {
+        display: none;
+    }
+    
+    .lang-dropdown {
+        display: block;
+        position: relative;
+    }
+    
+    .lang-dropdown-btn {
+        background: none;
+        border: 1px solid white;
+        color: white;
+        padding: 0.3rem 0.8rem;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: all 0.2s ease;
+        white-space: nowrap;
+    }
+    
+    .lang-dropdown-btn:hover {
+        background-color: white;
+        color: #C62828;
+    }
+    
+    .lang-dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #C62828;
+        min-width: 130px;
+        border-radius: 12px;
+        margin-top: 0.5rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        z-index: 200;
+        overflow: hidden;
+    }
+    
+    .lang-dropdown-content.show {
+        display: block;
+    }
+    
+    .lang-option {
+        background: none;
+        border: none;
+        color: white;
+        padding: 0.75rem 1rem;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: all 0.2s ease;
+    }
+    
+    .lang-option:hover {
+        background-color: #8B0000;
+    }
+    
+    /* Fix top bar spacing on mobile */
+    .top-bar {
+        padding: 0.5rem 1rem;
+    }
+    
+    .site-title {
+        font-size: 1rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+    }
+    
+    .menu-btn {
+        font-size: 1.5rem;
+        z-index: 10;
+    }
+}
+
+/* Sakura canvas - behind everything, no layout interference */
+.sakura {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;  /* Bottom layer */
+}
+
+/* Ensure content stays above petals naturally */
+.top-bar {
+    position: sticky;
+    z-index: 100;
+}
+
+.menu-overlay, .menu-panel {
+    z-index: 200;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+/* ========== ALL POEMS PAGE STYLES ========== */
+
+.poems-list-card {
+    background: rgba(255, 248, 225, 0.9);
+    border-radius: 24px;
+    padding: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.poems-list-card h1 {
+    color: #8B0000;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.poems-list-card .subtitle {
+    color: #5a3e1b;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+/* Poem list items */
+.poems-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.poem-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    padding: 1.2rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid rgba(139, 0, 0, 0.1);
+}
+
+.poem-list-item:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: translateX(8px);
+    border-color: #C62828;
+}
+
+.poem-list-content {
+    flex: 1;
+}
+
+.poem-list-title {
+    color: #2c1810;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.poem-list-preview {
+    color: #8B0000;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.poem-list-arrow {
+    color: #C62828;
+    font-size: 1.5rem;
+    transition: transform 0.2s ease;
+}
+
+.poem-list-item:hover .poem-list-arrow {
+    transform: translateX(5px);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .poems-list-card {
+        padding: 1.5rem;
+    }
+    
+    .poem-list-item {
+        padding: 1rem;
+    }
+    
+    .poem-list-title {
+        font-size: 1rem;
+    }
+}
+
+/* ========== POEM DETAIL PAGE ========== */
+
+.poem-detail-card {
+    background: rgba(255, 248, 225, 0.92);
+    border-radius: 32px;
+    padding: 2.5rem;
+    margin-top: 2rem;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+
+.poem-title-section {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.vertical-title img {
+    width: 150px;
+    height: auto;
+    max-height: 200px;
+    border-radius: 8px;
+    object-fit: contain;  /* Prevents cropping */
+}
+
+@media (max-width: 768px) {
+    .vertical-title img {
+        width: 100px;  /* Smaller on mobile */
+    }
+}
+
+.poem-header h1 {
+    font-size: 2.2rem;
+    color: #8B0000;
+    margin-bottom: 0.5rem;
+}
+
+.poem-subtitle {
+    color: #5a3e1b;
+    font-style: italic;
+}
+
+.dynasty {
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.brush-divider {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.brush-divider img {
+    width: 200px;
+    height: auto;
+    opacity: 0.6;
+}
+
+.full-poem {
+    margin: 2rem 0;
+}
+
+.poem-chinese-text {
+    font-size: 1.4rem;
+    line-height: 2.2;
+    color: #2c1810;
+    margin-bottom: 1.5rem;
+}
+
+.poem-translation-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #3a2a1a;
+    font-style: italic;
+    border-left: 3px solid #C62828;
+    padding-left: 1.5rem;
+}
+
+.stamp-section {
+    text-align: right;
+    margin: 1rem 0 2rem;
+}
+
+.red-stamp {
+    width: 300px;
+    height: auto;
+    opacity: 0.8;
+}
+
+.commentary-section {
+    background: rgba(255, 245, 235, 0.6);
+    border-radius: 24px;
+    padding: 1.8rem;
+    margin: 2rem 0;
+}
+
+.commentary-section h2 {
+    color: #8B0000;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.commentary-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #2c1810;
+}
+
+.poem-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.nav-prev, .nav-next, .star-btn-detail {
+    background: #C62828;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.3rem;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.nav-prev:hover, .nav-next:hover, .star-btn-detail:hover {
+    background: #8B0000;
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .poem-detail-card {
+        padding: 1.5rem;
+    }
+    
+    .poem-title-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .poem-header h1 {
+        font-size: 1.6rem;
+    }
+    
+    .poem-chinese-text {
+        font-size: 1.1rem;
+    }
+    
+    .poem-navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.commentary-text {
+    color: #2c1810 !important;
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
+    display: block !important;
+    visibility: visible !important;
+}
+
+.site-title {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.site-title:hover {
+    color: #ffcccc;
+}
+
+body {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ========== FAVORITES PAGE IMPROVED DESIGN ========== */
+
+.favorites-card {
+    background: rgba(255, 248, 225, 0.92);
+    border-radius: 32px;
+    padding: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.favorites-card h1 {
+    color: #8B0000;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.favorites-card .subtitle {
+    text-align: center;
+    color: #5a3e1b;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+/* Favorite items - same as homepage poem card */
+.favorite-item {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 24px;
+    padding: 1.5rem;
+    margin-bottom: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    transition: all 0.2s ease;
+    border: 1px solid rgba(139, 0, 0, 0.1);
+}
+
+.favorite-item:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: translateX(5px);
+    border-color: #C62828;
+}
+
+.favorite-content {
+    flex: 1;
+}
+
+.favorite-title {
+    color: #2c1810;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.favorite-preview {
+    color: #8B0000;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.favorite-actions {
+    display: flex;
+    gap: 0.8rem;
+}
+
+/* Red wine buttons matching homepage star button */
+.favorite-actions .read-btn,
+.favorite-actions .remove-btn {
+    background: #C62828;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.favorite-actions .read-btn:hover,
+.favorite-actions .remove-btn:hover {
+    background: #8B0000;
+    transform: scale(1.02);
+}
+
+.remove-btn {
+    background: #5a3e1b !important;
+}
+
+.remove-btn:hover {
+    background: #3d2a10 !important;
+}
+
+/* Empty state styling */
+.empty-favorites {
+    text-align: center;
+    padding: 3rem;
+    color: #5a3e1b;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 24px;
+}
+
+.empty-favorites a {
+    color: #C62828;
+    text-decoration: none;
+}
+
+.empty-favorites a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .favorites-card {
+        padding: 1.2rem;
+    }
+    
+    .favorite-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.2rem;
+    }
+    
+    .favorite-actions {
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+    
+    .favorite-title {
+        font-size: 1rem;
+    }
+}
+
+/* About page - same card design as favorites */
+.about-card {
+    background: rgba(255, 248, 225, 0.92);
+    border-radius: 32px;
+    padding: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.about-card h1 {
+    color: #8B0000;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.about-subtitle {
+    text-align: center;
+    color: #5a3e1b;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.about-header {
+    text-align: center;
+}
+
+.about-stamp {
+    width: 70px;
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    color: #2c1810;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.contact-section {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.contact-section h2 {
+    color: #8B0000;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.contact-section p {
+    color: #5a3e1b;
+    margin-bottom: 1rem;
+}
+
+.email-link {
+    display: inline-block;
+    background: #C62828;
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 40px;
+    transition: all 0.2s ease;
+}
+
+.email-link:hover {
+    background: #8B0000;
+    transform: scale(1.02);
+}
+/* Make all PNGs with white backgrounds transparent */
+.poem-image img,
+.vertical-title img,
+.brush-divider img,
+.about-stamp,
+.red-stamp,
+.stamp-section img {
+    background-color: transparent;
+    mix-blend-mode: multiply; /* This makes white backgrounds disappear */
+}
+
+/* For images that need normal display */
+.about-stamp {
+    mix-blend-mode: normal;
+}
+
+/* Force remove white backgrounds from PNGs */
+.poem-image img,
+.vertical-title img,
+.brush-divider img,
+.about-stamp,
+.red-stamp,
+.stamp-section img,
+img[src*="stamp"],
+img[src*="brush"],
+img[src*="title"] {
+    background: transparent !important;
+    mix-blend-mode: multiply;
+}
+
+/* For the stamp specifically */
+.about-stamp, .red-stamp {
+    background: transparent !important;
+    mix-blend-mode: normal;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+}

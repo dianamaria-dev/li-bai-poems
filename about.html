@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wine Poet — About Li Bai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SLIDING MENU -->
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="menu-panel" id="menuPanel">
+    <button class="close-menu" id="closeMenu">✕</button>
+    <a href="index.html" class="menu-item">Home</a>
+    <a href="all-poems.html" class="menu-item">All Poems</a>
+    <a href="favorites.html" class="menu-item">My Favorites</a>
+    <a href="about.html" class="menu-item">About Li Bai</a>
+    
+    <div class="menu-language">
+        <hr class="menu-divider">
+        <div class="menu-lang-buttons">
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="ro">RO</button>
+            <button class="lang-btn" data-lang="zh">中文</button>
+        </div>
+    </div>
+</div>
+
+<!-- RED MENU BAR -->
+<div class="top-bar">
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <a href="index.html" class="site-title">The Wine Poet</a>
+    <div class="lang-buttons" id="langButtons">
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ro">RO</button>
+        <button class="lang-btn" data-lang="zh">中文</button>
+    </div>
+    <div class="lang-dropdown" id="langDropdown">
+        <button class="lang-dropdown-btn" id="langDropdownBtn">EN ▼</button>
+        <div class="lang-dropdown-content" id="langDropdownContent">
+            <button class="lang-option" data-lang="en">EN - English</button>
+            <button class="lang-option" data-lang="ro">RO - Română</button>
+            <button class="lang-option" data-lang="zh">ZH - 中文</button>
+        </div>
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+    <div class="about-card">
+        <div class="about-header">
+            <img src="assets/images/decorative/stamp-taibai.png" alt="Li Bai stamp" class="about-stamp">
+            <h1>Li Bai</h1>
+            <p class="about-subtitle">701–762 · The Immortal Poet</p>
+        </div>
+        
+        <div class="brush-divider">
+            <img src="assets/images/decorative/brush-stroke.png" alt="Brush stroke">
+        </div>
+        
+        <div class="about-content">
+            <p>Li Bai (also known as Li Po) is widely regarded as one of the greatest poets in Chinese history. Often called the "Immortal Poet" (诗仙), he lived during the Tang Dynasty — a golden age of Chinese poetry.</p>
+            
+            <p>His poems are known for their vivid imagination, love of nature, celebration of wine, and deep friendship. He traveled extensively throughout China, and his wanderings deeply influenced his work.</p>
+            
+            <p>Legend says Li Bai died attempting to embrace the reflection of the moon from a boat on the Yangtze River — a fitting end for a poet who so loved the moon and wine.</p>
+            
+            <p>Over 1,000 of his poems survive today, and they continue to be recited, studied, and cherished across the world.</p>
+        </div>
+        
+        <div class="brush-divider">
+            <img src="assets/images/decorative/brush-stroke.png" alt="Brush stroke">
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-divider"></div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="all-poems.html">All Poems</a>
+                <a href="favorites.html">My Favorites</a>
+                <a href="about.html">About Li Bai</a>
+            </div>
+            <div class="contact-area">
+                <a href="mailto:libai.poetry@proton.me" class="contact-email">
+                    ✉ libai.poetry@proton.me
+                </a>
+            </div>
+            <div class="footer-legal">
+                <span>© 2024 The Wine Poet</span>
+                <span>•</span>
+                <span>Li Bai — Tang Dynasty</span>
+            </div>
+            <div class="designer-credit">
+                Calligraphy and website design by Diana Ș.
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/poems-data.js"></script>
+<script src="js/language.js"></script>
+<script src="js/menu.js"></script>
+
+</body>
+</html>
